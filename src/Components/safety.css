@@ -1,0 +1,66 @@
+@media screen and (min-width: 1025px){
+    .safe-card{
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+}
+@media screen and (max-width: 1024px){
+    .safe-card{
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        padding-bottom: 20px;
+    }
+    
+}
+
+.safe-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.safe-container strong{
+    height: 50px;
+    text-align: left;
+    font-size: larger;
+}
+
+.safe-card li{
+    height: 35px;
+    width: 100%;
+    border-bottom: 0.2px solid grey;
+}
+.dropdown-icon{
+    width: 10%; 
+    height: 35px;
+    
+}
+.dropdown{
+   
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+.question{
+  width: 90%;
+  height: 35px;
+  color: blue;
+  text-align: left;
+  margin-left: 0.5em;
+}
+.dropdown-content{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  color: grey !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

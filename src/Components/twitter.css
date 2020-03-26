@@ -1,0 +1,13 @@
+
+@media screen and (min-width: 1025px){
+    .twitter-container {
+        width: 50%;
+        margin: 0 auto;
+      }
+}
+@media screen and (max-width: 1024px){
+    .twitter-container{
+        width: 90%;
+        margin: 0 auto;
+      }
+}
