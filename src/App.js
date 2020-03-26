@@ -1,21 +1,11 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import PictureMap from './components/PictureMap';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-
-require('typeface-montserrat');
-require('typeface-roboto');
-
+import News from './Components/news'
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
-      <Navigation/>
-      <PictureMap/>
-      <Footer/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -30,8 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <News/>
     </div>
-    </BrowserRouter>
   );
 }
 
