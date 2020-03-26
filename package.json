@@ -13,6 +13,7 @@
     "react-twitter-embed": "^3.0.3"
     "d3-geo": "^1.11.9",
     "next": "^9.3.1",
+    "bootstrap": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
