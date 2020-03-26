@@ -3,14 +3,10 @@ import './news.css';
 import Dambudzo from '../assets/pres.jpg'
 import tab from '../assets/source.png'
 
-class News extends React.Component{
+class WorldNews extends React.Component{
   constructor(props) {
     super(props);
     this.state = {image: Dambudzo};
-  }
-
-  componentDidMount() {
-    
   }
 
   render(){
@@ -132,4 +128,4 @@ class News extends React.Component{
  
 }
 
-export default News;
+export default WorldNews;
