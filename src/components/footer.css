@@ -1,0 +1,63 @@
+.FooterComponent {
+    background-color: rgb(32, 47, 70);
+    padding: 10px 0;
+}
+
+.FooterWrapper {
+    width: 50%;
+    max-width: 26.25rem;
+    margin: auto;
+    text-align: justify;
+}
+
+.FooterComponent p {
+    color: white;
+}
+
+.footerHeading {
+    font-size: 20px;
+    /* font-family: 'Montserrat'; */
+}
+
+.FooterComponent a {
+    color: #1096a7;
+    font-weight: 700;
+}
+
+.FooterComponent a:hover {
+    text-decoration: none;
+}
+
+.paragraph {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.whatsApp {
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    background-color: rgb(235,235,225);
+    padding: 7.5px 7.5px;
+}
+
+.contactMinistry {
+    display: inline-flex;
+}
+
+.ministryText {
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+.contactMinistry p {
+    color: rgb(235,235,225);
+}
+
+.whatsApp:hover {
+    cursor: pointer;
+}
+
+.socialIcons .imageContainer a:hover {
+    filter: brightness(150%);
+}

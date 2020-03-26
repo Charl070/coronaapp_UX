@@ -1,0 +1,123 @@
+/*  */
+
+.pictureContainer img:hover {
+    cursor: pointer;
+}
+
+.VicFalls, .Harare {
+    border-radius: 50%;
+    background-color: #1096a7;
+    width: 25px;
+    height: 25px;
+}
+
+.VicFalls p, .Harare p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.VicFalls {
+    position: relative;
+    bottom: 245px;
+    left: 240px;
+}
+
+.Harare {
+    position: relative;
+    bottom: 305px;
+    left: 500px;
+}
+
+.table {
+    display: inline-flex;
+}
+
+.globalTable {
+    display: inline-flex;
+    width: 100%;
+}
+
+.globalTable .cases {
+    position: relative;
+    right: 12px;
+}
+
+.globalTable .deaths {
+    position: relative;
+    left: 12px;
+}
+
+.globalTable .cases, .recovered, .globalTable .deaths {
+    margin: auto;
+}
+
+#zimcases {
+    margin-right: 20px;
+}
+
+.cases .digit, .deaths .digit, .recovered .digit {
+    color: black;
+    font-size: 40px;
+    margin: 0;
+}
+
+.globalTable .digit {
+    color: black;
+    font-size: 25px;
+    margin: 0;
+}
+
+.cases p, .deaths p, .recovered p {
+    color: #1096a7;
+    font-weight: 700;
+}
+
+.body {
+    color: lightgrey;
+}
+
+/* .social, .heading {
+    text-align: left;
+} */
+
+.box {
+    height: 25px;
+    border-radius: 6px;
+    background-color: rgba(16, 150, 167, 0.5);
+}
+
+.socialIcons {
+    display: inline-flex;
+    padding-bottom: 15px;
+}
+
+.socialIcons .imageContainer {
+    /* background-color: rgb(235,235,215);
+    border-color: rgb(32, 47, 70);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; */
+    margin: 0 6px;
+}
+
+.social, .stats {
+    width: 50%;
+    max-width: 26.25rem;
+    margin: auto;
+}
+
+.stats .heading {
+    font-size: 28px;
+    color: rgb(32, 47, 70);
+}
+
+.subHeading {
+    font-size: 23px;
+    margin: 0;
+    color: rgb(32, 47, 70);
+}
+
+.pictureContainer {
+    position: relative;
+    top: 35px;
+}
