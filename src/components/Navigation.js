@@ -5,23 +5,23 @@ import { Link } from 'react-router-dom';
 const links = [
     {   
         id:1,
-        title:"LIVE UPDATES",
-        to:""
+        title:"UPDATES",
+        to:"/"
     },
     {
         id: 2,
         title:"NEWS",
-        to:""
+        to:"/news"
     },
     {
         id: 3,
         title:"SAFETY",
-        to:""
+        to:"/safety"
     },
     {
         Id: 4,
         title:"TWITTER",
-        to:""
+        to:"/twitter"
     },
 ]
 

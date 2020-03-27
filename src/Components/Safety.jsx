@@ -1,11 +1,14 @@
 import React from 'react';
 import './safety.css';
-import Dambudzo from '../assets/pres.jpg'
-import drop from '../assets/down-arrow.png'
+import Dambudzo from '../assets/pres.jpg';
+import drop from '../assets/down-arrow.png';
+import Navigation from './Navigation';
 
 function Safety() {
   return (
-   <div className="safe-container">
+    <div>
+      <Navigation/>
+      <div className="safe-container">
        <strong>The Basics</strong>
      <div className="safe-card">
       <ul>
@@ -166,6 +169,8 @@ If you wear a mask, then you must know how to use it and dispose of it properly.
       </ul>
      </div>
    </div>
+    </div>
+   
   );
 }
 

@@ -12,10 +12,13 @@ import { TwitterTimelineEmbed,
     TwitterDMButton,
      TwitterVideoEmbed,
       TwitterOnAirButton } from 'react-twitter-embed';
+import Navigation from './Navigation';      
 
 function Twitter() {
   return (
-   <div className="twitter-container">
+    <div>
+      <Navigation/>
+      <div className="twitter-container">
        <div className="text-strong">
            Stay Connected With Tweets
        </div>
@@ -30,6 +33,10 @@ function Twitter() {
 </div>
 </div>
    </div>
+      </div>
+  
+
+    
   );
 }
 
