@@ -1,7 +1,8 @@
 import React from 'react';
 import './news.css';
-import Dambudzo from '../assets/pres.jpg'
-import tab from '../assets/source.png'
+import Dambudzo from '../assets/pres.jpg';
+import tab from '../assets/source.png';
+import Navigation from './Navigation'
 
 class News extends React.Component{
   constructor(props) {
@@ -16,6 +17,8 @@ class News extends React.Component{
   render(){
     return (
       <div>
+        <Navigation/>
+        <div>
           <div className="text-strong">
               Around The Globe
           </div>
@@ -127,6 +130,8 @@ class News extends React.Component{
      </li>
    </ul>
       </div>
+      </div>
+      
      );
   }
  
