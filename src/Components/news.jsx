@@ -16,7 +16,7 @@ class News extends React.Component{
 
   render(){
     return (
-      <div>
+      <div className="NewsComponent">
         <Navigation/>
         <div>
           <div className="text-strong">

@@ -59,7 +59,8 @@ export default class PictureMap extends React.Component {
                         </div>
                     </div>
 
-                    <p className="body">Last Updated 25 March 2020</p>
+                    <a href="https://covidvisualizer.com" target="_blank"><button type="button">View By Country</button></a>
+                    <p className="body">Last Updated 25 March 2020</p> 
 
                 </div>
 

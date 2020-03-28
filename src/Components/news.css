@@ -1,12 +1,12 @@
 @media screen and (min-width: 1025px){
-    li {
+    .NewsComponent li {
         width: 50%;
         height: 100px;
         margin: .5em;
       }
 }
 @media screen and (max-width: 1024px){
-    li {
+    .NewsComponent li {
         width: 90%;
         height: 100px;
         margin: .5em;

@@ -34,13 +34,16 @@ export default class Navigation extends React.Component {
         return(
             <div className="NavigationComponent">
                 <div>
+                    <p className="appHeading" style={{color: "white"}}><strong>ZIM CORONA UPDATES</strong></p>
+                <div className="NavWrapper">
                     <ul>
                         {links.map(link => (
                             <li key={link.id}>
-                                <Link to={link.to}>{link.title}</Link>
+                                <Link to={link.to} style={{color: "white"}}>{link.title}</Link>
                             </li>    
                         ))}
                     </ul>
+                    </div>
                 </div> 
             </div>
         );
