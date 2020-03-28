@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import News from './Components/news';
 import Twitter from './Components/twitter';
 import Safety from './Components/Safety';
+import  Navigation from './Components/Navigation'
 
 
 
@@ -14,8 +15,8 @@ require('typeface-roboto');
 
 function App() {
   return (
-    <BrowserRouter>
     <div className="App">
+      <Navigation/>
       <Switch>
         <Route path="/" component={Home} exact key="home"/> 
         <Route path="/news" component={News} exact key="news"/>
@@ -23,7 +24,6 @@ function App() {
         <Route path="/safety" component={Safety} exact key="safety"/>
       </Switch>
     </div>
-    </BrowserRouter>
   );
 }
 

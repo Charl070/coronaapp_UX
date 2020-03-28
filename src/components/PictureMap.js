@@ -1,14 +1,38 @@
 import React from 'react';
 import zim from '../assets/zw.svg';
 import './map.css';
-import facebook from "../assets/facebook-logo.svg";
-import whatsapp from "../assets/whatsapp.svg";
-import twitter from "../assets/twitter.svg";
+import {covid19API} from "../services/covid19Api";
+import {FacebookShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+    WhatsappIcon,
+    TwitterIcon,
+    FacebookIcon
+} from "react-share"
+
+const API = covid19API()
 
 export default class PictureMap extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-    }
+        this.state = {deceased: 0,
+            reported: 0,
+            date : ""
+        }
+
+      }
+
+      async componentDidMount(){
+          
+          const data = await API.getLatestReportForLocation("Zimbabwe");
+          console.log("data", data);
+          this.setState({deceased:data.deaths,
+            reported:data.confirmed,
+            date: new Date(data.timeStamp).toDateString()
+            // date: `${new Date(data.timeStamp).getDate()} ${new Date(data.timeStamp).getMonth()}`
+     })   
+
+      }
 
     render(){
         return(
@@ -31,12 +55,12 @@ export default class PictureMap extends React.Component {
 
                     <div className="table">
                         <div className="cases" id="zimcases">
-                            <p className="digit">3</p>
-                            <p>CONFIRMED CASES</p>
+                            <p className="digit">{this.state.reported}</p>
+                            <p>REPORTED CASES</p>
                         </div>
                         
                         <div className="deaths">
-                            <p className="digit">1</p>
+                            <p className="digit">{this.state.deceased}</p>
                             <p>TOTAL DEATHS</p>
                         </div>
                     </div>
@@ -59,8 +83,11 @@ export default class PictureMap extends React.Component {
                         </div>
                     </div>
 
+
                     <a href="https://covidvisualizer.com" target="_blank"><button type="button">View By Country</button></a>
-                    <p className="body">Last Updated 25 March 2020</p> 
+                  
+
+                    <p className="body">Last Updated {this.state.date} </p>
 
                 </div>
 
@@ -69,14 +96,35 @@ export default class PictureMap extends React.Component {
                     <p className="heading"><strong>Share This Website</strong></p>
 
                     <div className="socialIcons">
+                        <div>
+                            </div>
                         <div className="imageContainer">
-                            <a href="#"><img src={facebook} height="35px" alt="1" width="35px"/></a>
+                            <FacebookShareButton
+                            url={"https://nona.digital"}
+                            quote={"dhfdgjdglkfhglkfglkfg"}
+                            className="Demo__some-network__share-button"
+                        >
+                            <FacebookIcon size={36} round />
+                        </FacebookShareButton>
                         </div>
                         <div className="imageContainer">
-                            <a href="#" target="_blank"><img src={twitter} height="35px" alt="1" width="35px"/></a>
+                        <WhatsappShareButton
+                            url={"https://nona.digital"}
+                            quote={"dhfdgjdglkfhglkfglkfg"}
+                            className="Demo__some-network__share-button"
+                        >
+                            <WhatsappIcon size={36} round />
+                        </WhatsappShareButton>
                         </div>
                         <div className="imageContainer">
-                            <a href="#" target="_blank"><img src={whatsapp} height="35px" alt="1" width="35px"/></a>
+                        <TwitterShareButton
+                            url={"https://nona.digital"}
+                            quote={"dhfdgjdglkfhglkfglkfg"}
+                            className="Demo__some-network__share-button"
+                        >
+                            <TwitterIcon size={36} round />
+                        </TwitterShareButton>
+
                         </div>
                     </div>
                 </div>
