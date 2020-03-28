@@ -7,7 +7,6 @@ import Navigation from './Navigation';
 function Safety() {
   return (
     <div>
-      <Navigation/>
       <div className="safe-container">
        <strong>The Basics</strong>
      <div className="safe-card">

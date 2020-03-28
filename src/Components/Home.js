@@ -10,13 +10,10 @@ require('typeface-roboto');
 
 function Home() {
   return (
-    <BrowserRouter>
     <div className="App">
-    <Navigation/>
     <PictureMap/>
       <Footer/>  
     </div>
-    </BrowserRouter>
   );
 }
 

@@ -121,3 +121,13 @@
     position: relative;
     top: 35px;
 }
+
+#root > div > div.App > div.pictureMapComponent > div.social > div.socialIcons > div:nth-child(1) > button > svg > circle{
+    fill: red;
+    
+    
+}
+
+#root > div > div.App > div.pictureMapComponent > div.social > div.socialIcons > div:nth-child(1) > button > svg{
+  
+}
