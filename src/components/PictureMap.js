@@ -38,9 +38,16 @@ export default class PictureMap extends React.Component {
         return(
             <div className="pictureMapComponent">
                 <div className="pictureContainer">
-                    <img src={zim} alt="Zimbabwe Map"></img>
+                    <img src={zim} alt="Zimbabwe Grey Map"></img>
                 </div>
 
+                {/* <div className="VicFalls">
+                    <p><strong>1</strong></p>
+                </div>
+
+                <div className="Harare">
+                    <p><strong>2</strong></p>
+                </div> */}
                 {/* <div className="VicFalls">
                     <p><strong>1</strong></p>
                 </div>
