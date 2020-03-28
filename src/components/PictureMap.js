@@ -97,7 +97,7 @@ export default class PictureMap extends React.Component {
                         <div className="imageContainer">
                             <FacebookShareButton
                             url={"https://nona.digital"}
-                            quote={"dhfdgjdglkfhglkfglkfg"}
+                            quote={"Corona Virus Updates For Zimbabwe #COVID19"}
                             className="Demo__some-network__share-button"
                         >
                             <FacebookIcon size={36} round />

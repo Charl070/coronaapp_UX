@@ -4,6 +4,7 @@ import Dambudzo from '../assets/pres.jpg'
 import tab from '../assets/source.png'
 import { TwitterTimelineEmbed,
     } from 'react-twitter-embed';      
+import Footer from './Footer';
 
 function Twitter() {
   return (
@@ -23,6 +24,7 @@ function Twitter() {
 </div>
 </div>
    </div>
+   <Footer/>
       </div>
   
 
