@@ -1,7 +1,28 @@
 /*  */
 
+/* @media screen and(min-width: 1100px){
+    .pictureContainer {
+        width: 490px;
+        margin: auto;
+    }
+
+    .pictureContainer img {
+    }
+
+} */
+
 .pictureContainer img:hover {
     cursor: pointer;
+}
+
+.pictureContainer {
+    /* width: 50%; */
+    margin: auto;
+}
+
+.pictureContainer img {
+    max-width: 100%;
+    height: 450px;
 }
 
 .VicFalls, .Harare {
@@ -19,13 +40,13 @@
 .VicFalls {
     position: relative;
     bottom: 222px;
-    left: 240px;
+    left: 0;
 }
 
 .Harare {
     position: relative;
     bottom: 270px;
-    left: 500px;
+    left: 61%;
 }
 
 .stats .table {
@@ -36,8 +57,10 @@
 }
 
 .globalTable {
-    display: inline-flex;
+    display: flex;
     width: 100%;
+    justify-content: space-around;
+
 }
 
 .globalTable .cases {
@@ -75,7 +98,7 @@
 }
 
 .cases p, .deaths p, .recovered p {
-    color: #1096a7;
+    color: black;
     font-weight: 700;
 }
 
@@ -91,7 +114,8 @@
 .box {
     height: 25px;
     border-radius: 13px;
-    background-color: rgba(16, 150, 167, 0.5);
+    /* background-color: rgba(16, 150, 167, 0.5); */
+    background-color: #1096a7;
     margin-bottom: 13px;
 }
 
@@ -113,6 +137,7 @@
     width: 50%;
     max-width: 26.25rem;
     margin: auto;
+    margin-top: 45px;
 }
 
 .stats .heading {
@@ -150,4 +175,16 @@
 
 .stats button:hover {
     filter: brightness(117%);
+}
+
+#green {
+    color: green;
+}
+
+#orange, #localcases {
+    color: orange;
+}
+
+#red, #localdeaths {
+    color: red;
 }

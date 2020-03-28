@@ -21,11 +21,7 @@ function Safety() {
                 <div class="dropdown-content">
                 <p>COVID-19 is the infectious disease caused by the most recently discovered coronavirus. 
                     This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019
-                    <br/>
-                    <hr/>
-                    <div className="safety-source">
-                    National Department Of Health
-                    </div>
+                    
                    </p>
                 </div>
               </div>
@@ -41,11 +37,7 @@ function Safety() {
                 How Does The Virus Spread?
                 <div class="dropdown-content">
                 <p>People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by touching these objects or surfaces, then touching their eyes, nose or mouth. People can also catch COVID-19 if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it is important to stay more than 1 meter (3 feet) away from a person who is sick.
-                <br/>
-                    <hr/>
-                    <div className="safety-source">
-                    World Heath Organisation
-                    </div>
+                
                 </p>
                 </div>
               </div>
@@ -58,7 +50,7 @@ function Safety() {
           <li>
               <div className='dropdown'>
               <div className='question'>
-                How Dangerous Is The Virus? Should I Be Scared?
+                How Dangerous Is The Virus?
                 <div class="dropdown-content">
                 <p>
 There is no need to panic – 82% of COVID-19 cases are mild: patients only experience a slight fever, fatigue and a cough. 
@@ -68,11 +60,8 @@ Early information out of China, where COVID-19 first started, shows that some pe
 
 Older adults and People who have serious chronic medical conditions like:Heart disease, Diabetes,Lung disease
 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                    Centers for Disease Control and Prevention
-                    </div></p>
-                </div>
+                    
+                </p></div>
               </div>
               <div className='dropdown-icon'>
               <img src={drop} alt=""/>
@@ -99,10 +88,7 @@ New confusion or inability to arouse,
 Bluish lips or face
 *This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.
 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                     Centers for Disease Control and Prevention
-                    </div></p>
+                    </p>
                 </div>
               </div>
               <div className='dropdown-icon'>
@@ -114,7 +100,7 @@ Bluish lips or face
       </ul>
      </div>
      <br/>
-     <strong>Protection</strong>
+     <strong className="protectionHeading">Protection</strong>
      <br/>
      <div className="safe-card">
       <ul>
@@ -136,10 +122,7 @@ Why? Droplets spread virus. By following good respiratory hygiene you protect th
 Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places  – especially if you are an older person or have diabetes, heart or lung disease.
 Why? You have a higher chance of catching COVID-19 in one of these areas.
 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                     Centers for Disease Control and Prevention
-                    </div></p>
+                    </p>
                 </div>
               </div>
               <div className='dropdown-icon'>
@@ -157,10 +140,7 @@ Why? You have a higher chance of catching COVID-19 in one of these areas.
 Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow.
 If you are sick: You should wear a facemask when you are around other people (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s office. If you are not able to wear a facemask (for example, because it causes trouble breathing), then you should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room.
 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                     Centers for Disease Control and Prevention
-                    </div></p>
+                    </p>
                 </div>
               </div>
               <div className='dropdown-icon'>
@@ -178,10 +158,7 @@ If you are sick: You should wear a facemask when you are around other people (e.
 
                 Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date. You can learn more about who is most at risk for health problems if they have COVID-19 infection on CDC’s current Risk Assessment page. Children may cause the virus to spread amongst other members of your family, You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy.
                 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                     Centers for Disease Control and Prevention
-                    </div></p>
+                  </p>
                 </div>
               </div>
               <div className='dropdown-icon'>
@@ -200,10 +177,7 @@ Wear a mask if you are coughing or sneezing.
 Masks are effective only when used in combination with frequent hand-cleaning with alcohol-based hand rub or soap and water.
 If you wear a mask, then you must know how to use it and dispose of it properly.
 <br/>
-                    <hr/>
-                    <div className="safety-source">
-                    Centers for Disease Control and Prevention
-                    </div></p>
+                  </p>
                 </div>
               </div>
               <div className='dropdown-icon'>

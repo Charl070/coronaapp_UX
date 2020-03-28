@@ -22,7 +22,12 @@
 .safe-card li{
     height: 35px;
     width: 100%;
-    border-bottom: 0.2px solid grey;
+    border-bottom: 0.2px solid rgb(172, 167, 167);
+    margin-bottom: 8px;
+}
+
+.safe-card ul {
+    margin-bottom: 0;
 }
 .dropdown-icon{
     width: 10%; 
@@ -59,4 +64,14 @@
 
 .dropdown-content .safety-source{
     color: royalblue;
+}
+
+.safe-card {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.safe-container .text-stron, .protectionHeading {
+    font-size: 20px;
+    font-family: 'Montserrat';
 }

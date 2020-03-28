@@ -26,9 +26,8 @@ class News extends React.Component{
     return (
 
       <div className="NewsComponent">
-        <Navigation/>
         <div>
-          <div className="text-strong">
+          <div >
 
       <div>
         {/* <div className="text-strong">
@@ -78,6 +77,9 @@ class News extends React.Component{
               Powered by <a href="https://newsapi.org/">News API</a>
             </div>
             <Footer/>
+      </div>
+      </div>
+      </div>
       </div>
       
      );
