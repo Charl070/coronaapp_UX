@@ -23,8 +23,15 @@ class News extends React.Component{
 
   render(){
     return (
+
+      <div className="NewsComponent">
+        <Navigation/>
+        <div>
+          <div className="text-strong">
+
       <div>
         {/* <div className="text-strong">
+
               Around The Globe
         </div> */}
         {this.state.data !== null? 

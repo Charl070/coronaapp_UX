@@ -42,10 +42,12 @@
 }
 
 .contactMinistry {
+    margin-bottom: 15px;
     display: inline-flex;
 }
 
 .ministryText {
+    padding-top: 13px;
     padding-left: 10px;
     font-weight: 500;
 }
