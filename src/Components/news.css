@@ -8,7 +8,7 @@
 @media screen and (max-width: 1024px){
     .NewsComponent li {
         width: 90%;
-        height: 100px;
+        height: auto;
         margin: .5em;
       }  
 }

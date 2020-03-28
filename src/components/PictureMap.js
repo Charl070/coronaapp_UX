@@ -38,16 +38,16 @@ export default class PictureMap extends React.Component {
         return(
             <div className="pictureMapComponent">
                 <div className="pictureContainer">
-                    <img src={zim} alt="Zimbabwe Map" width="400px" height="400px"></img>
+                    <img src={zim} alt="Zimbabwe Map"></img>
                 </div>
 
-                <div className="VicFalls">
+                {/* <div className="VicFalls">
                     <p><strong>1</strong></p>
                 </div>
 
                 <div className="Harare">
                     <p><strong>2</strong></p>
-                </div>
+                </div> */}
 
                 <div className="stats">
                     <p className="heading"><strong>Latest Statistics</strong></p>
@@ -55,12 +55,12 @@ export default class PictureMap extends React.Component {
 
                     <div className="table">
                         <div className="cases" id="zimcases">
-                            <p className="digit">{this.state.reported}</p>
+                            <p className="digit" id="localcases">{this.state.reported}</p>
                             <p>REPORTED CASES</p>
                         </div>
                         
                         <div className="deaths">
-                            <p className="digit">{this.state.deceased}</p>
+                            <p className="digit" id="localdeaths">{this.state.deceased}</p>
                             <p>TOTAL DEATHS</p>
                         </div>
                     </div>
@@ -68,17 +68,17 @@ export default class PictureMap extends React.Component {
                     <p className="subHeading"><strong>Global</strong></p>
                     <div className="globalTable">
                         <div className="cases">
-                            <p className="digit">471,044</p>
+                            <p className="digit" id="orange">471,044</p>
                             <p>CONFIRMED CASES</p>
                         </div>
 
                         <div className="recovered">
-                            <p className="digit">114,228</p>
-                            <p>RECOVERED</p>
+                            <p className="digit" id="green">114,228</p>
+                            <p>RECOVERED PATIENTS</p>
                         </div>
                         
                         <div className="deaths">
-                            <p className="digit">21,284</p>
+                            <p className="digit" id="red">21,284</p>
                             <p>TOTAL DEATHS</p>
                         </div>
                     </div>
