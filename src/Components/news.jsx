@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react';
 import './news.css';
-import Dambudzo from '../assets/pres.jpg';
+import Dambudzo from '../assets/news-3.jpg';
 import tab from '../assets/source.png';
 import Navigation from './Navigation';
 import {newsApi} from '../services/newsApi';
 import Spinner from 'react-spinkit';
+import Footer from './Footer';
 
 const NewsAPI = newsApi()
 
@@ -16,7 +17,7 @@ class News extends React.Component{
 
   async componentDidMount(){
           
-    const data = await NewsAPI.getLatestNews("zimbabwe corona virus");
+    const data = await NewsAPI.getLatestNews("corona + virus + zimbabwe");
     console.log("data", data);
     this.setState({ data })   
 }
@@ -76,6 +77,7 @@ class News extends React.Component{
             <div>
               Powered by <a href="https://newsapi.org/">News API</a>
             </div>
+            <Footer/>
       </div>
       
      );
