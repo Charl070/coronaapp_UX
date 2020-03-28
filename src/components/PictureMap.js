@@ -88,6 +88,7 @@ export default class PictureMap extends React.Component {
                   
 
                     <p className="body">Last Updated {this.state.date} </p>
+                    <p className="body">Some Cases are of Unknown Provincial Distritution</p>
 
                 </div>
 
