@@ -10,7 +10,7 @@ export function covid19API() {
         try {
             const response = await axios({
                 method: 'GET',
-                url:'https://localhost:5001/api/covid19/locations',
+                url:'https://covid19api20200327232446.azurewebsites.net/api/covid19/locations',
             });
             if(response.status === 200) {
                 return response.data
@@ -24,14 +24,14 @@ export function covid19API() {
         try {
             const response = await axios({
                 method: 'GET',
-                url:'https://localhost:5001/api/covid19/latest',
+                url:'https://covid19api20200327232446.azurewebsites.net/api/covid19/latest',
                 params: { country }
             });
             if(response.status === 200) {
                 return response.data
             }    
         } catch (error) {
-            throw new Error(error)
+            
         }
     }
     

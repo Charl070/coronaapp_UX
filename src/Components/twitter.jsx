@@ -3,25 +3,15 @@ import './twitter.css';
 import Dambudzo from '../assets/pres.jpg'
 import tab from '../assets/source.png'
 import { TwitterTimelineEmbed,
-   TwitterShareButton,
-    TwitterFollowButton, 
-    TwitterHashtagButton,
-     TwitterMentionButton, 
-     TwitterTweetEmbed, 
-     TwitterMomentShare, 
-    TwitterDMButton,
-     TwitterVideoEmbed,
-      TwitterOnAirButton } from 'react-twitter-embed';
-import Navigation from './Navigation';      
+    } from 'react-twitter-embed';      
 
 function Twitter() {
   return (
     <div>
-      <Navigation/>
       <div className="twitter-container">
-       <div className="text-strong">
+       {/* <div className="text-strong">
            Stay Connected With Tweets
-       </div>
+       </div> */}
        <div className="centerContent">
 <div className="selfCenter standardWidth">
 <TwitterTimelineEmbed
